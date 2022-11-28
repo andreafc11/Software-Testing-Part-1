@@ -127,7 +127,7 @@ public class ScreenScraperTests {
         when(maltapark.getItemHeading()).thenReturn("Heading");
         when(maltapark.getItemDescription()).thenReturn("Description");
         when(maltapark.getItemUrl()).thenReturn("Url");
-        when(maltapark.getItemImage()).thenReturn("Image");
+        when(maltapark.getItemImageUrl()).thenReturn("imageUrl");
         when(maltapark.getItemPriceInCents()).thenReturn(99);
 
         //Exercise
@@ -142,7 +142,7 @@ public class ScreenScraperTests {
     @Test
     public void testUploadListToMarketAlert() {
         //Setup
-        Item item = new Item(6, "Heading", "Description", "Url", "Image", 77);
+        Item item = new Item(6, "Heading", "Description", "Url", "imageUrl", 77);
 
         itemList = new ArrayList<>();
         itemList.add(item);

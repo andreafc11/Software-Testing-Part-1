@@ -110,9 +110,9 @@ public class MakeRequestTests {
         String heading = "Jumper Windows 11 Laptop";
         String description = "Jumper Windows 11 Laptop 1080P Display,12GB RAM 256GB SSD";
         String url = "https://www.amazon.co.uk/Windows-Display-Ultrabook-Processor-Bluetooth";
-        String image = "https://m.media-amazon.com/images/I/712Xf2LtbJL._AC_SX679_.jpg";
+        String imageUrl = "https://m.media-amazon.com/images/I/712Xf2LtbJL._AC_SX679_.jpg";
         int priceInCents = 24999;
-        Item item = new Item(alertType, heading, description, url, image, priceInCents);
+        Item item = new Item(alertType, heading, description, url, imageUrl, priceInCents);
 
         // setter injection
         makeRequest.setJSONObject(item);
@@ -136,9 +136,9 @@ public class MakeRequestTests {
         String heading = "Jumper Windows 11 Laptop";
         String description = "Jumper Windows 11 Laptop 1080P Display,12GB RAM 256GB SSD";
         String url = "https://www.amazon.co.uk/Windows-Display-Ultrabook-Processor-Bluetooth";
-        String image = "https://m.media-amazon.com/images/I/712Xf2LtbJL._AC_SX679_.jpg";
+        String imageUrl = "https://m.media-amazon.com/images/I/712Xf2LtbJL._AC_SX679_.jpg";
         int priceInCents = 24999;
-        Item item = new Item(alertType, heading, description, url, image, priceInCents);
+        Item item = new Item(alertType, heading, description, url, imageUrl, priceInCents);
 
         // setter injection
         makeRequest.setJSONObject(item);

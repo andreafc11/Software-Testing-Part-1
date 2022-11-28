@@ -6,17 +6,17 @@ public class Item {
     protected String heading;
     protected String description;
     protected String url;
-    protected String image;
+    protected String imageUrl;
 
     protected int priceInCents;
 
     // constructor injection
-    public Item(int alertType, String heading, String description, String url, String image, int priceInCents) {
+    public Item(int alertType, String heading, String description, String url, String imageUrl, int priceInCents) {
         this.alertType = alertType;
         this.heading = heading;
         this.description = description;
         this.url = url;
-        this.image = image;
+        this.imageUrl = imageUrl;
         this.priceInCents = priceInCents;
     }
 
@@ -40,8 +40,8 @@ public class Item {
         return url;
     }
 
-    public String getImage() {
-        return image;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
     public int getPriceInCents() {
@@ -63,8 +63,8 @@ public class Item {
         this.url = url;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public void setPriceInCents(int priceInCents) {

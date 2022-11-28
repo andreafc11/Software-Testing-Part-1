@@ -114,15 +114,15 @@ public class MaltaParkTests {
 
 
     @Test
-    public void testGetItemImage(){
+    public void testGetItemImageUrl(){
         //Setup (if any)
         Mockito.when(mockWebElement.getAttribute(anyString())).thenReturn(Mockito.anyString());
 
         //Exercise
-        String itemImageString = maltapark.getItemImage();
+        String itemImageUrlString = maltapark.getItemImageUrl();
 
         //Verify
-        Assertions.assertNotNull(itemImageString);
+        Assertions.assertNotNull(itemImageUrlString);
 
         //Teardown (if any)
     }

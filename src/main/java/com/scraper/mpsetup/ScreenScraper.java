@@ -64,7 +64,7 @@ public class ScreenScraper {
             String heading = maltapark.getItemHeading();
             String description = maltapark.getItemDescription();
             String url = maltapark.getItemUrl();
-            String image = maltapark.getItemImage();
+            String imageUrl = maltapark.getItemImageUrl();
             int priceInCents = maltapark.getItemPriceInCents();
 
             // setter injection
@@ -72,7 +72,7 @@ public class ScreenScraper {
             item.setHeading(heading);
             item.setDescription(description);
             item.setUrl(url);
-            item.setImage(image);
+            item.setImageUrl(imageUrl);
             item.setPriceInCents(priceInCents);
 
             itemList.add(item);

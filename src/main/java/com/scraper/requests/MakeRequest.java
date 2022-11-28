@@ -33,7 +33,7 @@ public class MakeRequest {
         jsonLine.put("heading", item.getHeading());
         jsonLine.put("description", item.getDescription());
         jsonLine.put("url", item.getUrl());
-        jsonLine.put("image", item.getImage());
+        jsonLine.put("imageUrl", item.getImageUrl());
         jsonLine.put("postedBy", marketalertID);
         jsonLine.put("priceInCents", item.getPriceInCents());
     }

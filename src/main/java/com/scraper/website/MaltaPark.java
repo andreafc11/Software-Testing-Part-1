@@ -61,7 +61,7 @@ public class MaltaPark extends PageObject{
         return driver.getCurrentUrl();
     }
 
-    public String getItemImage() {
+    public String getItemImageUrl() {
         By byItemImageXpath = By.xpath("//a[@class='fancybox']");
         WebElement webElement = driver.findElement(byItemImageXpath);
         return webElement.getAttribute("href");
